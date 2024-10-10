@@ -1,8 +1,8 @@
-### Web FA2024 CSS Project
+# Web FA2024 CSS Project
 
 ## Team Members: Ethan Epperson, Eva Reish, Madeline Mancini, Kyle Saunders
 
-# Main Goal: Create Symphony Website
+###  Main Goal: Create Symphony Website
 
 Project Requirements:
 - Your site must be at least 4 pages: landing page, schedule, FAQ, and contact/about (these could be split up or combined)
