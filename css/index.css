@@ -27,7 +27,7 @@ body {
     justify-content: space-between;
   }
  
-  nav a {
+  nav li {
     color: #262626;
     text-decoration: none;
     padding: .5em 1em;
