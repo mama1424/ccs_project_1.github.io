@@ -3,9 +3,13 @@ body {
     height: 100vh;
 }
 
+#container {
+    width: 98vw;
+}
+
 .header {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.75rem;
+    font-weight: 700;
 }
 
 p {
@@ -14,10 +18,32 @@ p {
 
 .subheader {
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 #series-list {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    width: 100%;
+    /* fr represents a fraction of available space in grid container */
+    /* 1 fr = 1 part of available space, space will be shared equally by children */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    column-gap: 4vw;
+    row-gap: 1vw;
+}
+
+@media screen and (max-width: 1000px) {
+    #series-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.grid-image {
+    object-fit: fill;
+}
+
+.grid-text {
+    align-self: first baseline;
 }
