@@ -9,13 +9,16 @@ body {
 }
 
 p {
-    text-align: left;
-    color: white;
+    text-align: center;
+    color: white;    
 }
 
-.subheader {
-    font-size: 1.25rem;
-    font-weight: 500;
+img{
+     width: 300px; 
+     height: 200px;
+     border: 2px solid white;  
+     border-radius: 15px;
+     float: right;
 }
 
 #series-list {
