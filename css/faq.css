@@ -16,7 +16,7 @@ body {
 nav {
     background-color: #F2AC29;
     width: 100vw;
-    padding: 0;
+    padding: 0.5em;
     position: sticky;
     top: 0;
   }
