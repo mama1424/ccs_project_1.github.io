@@ -22,30 +22,33 @@ p {
     font-weight: 600;
 }
 
-#series-list {
-    margin-top: 2vh;
-    display: grid;
-    width: 100%;
-    /* fr represents a fraction of available space in grid container */
-    /* 1 fr = 1 part of available space, space will be shared equally by children */
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
-    justify-items: center;
-    /* 
-        align-items aligns content on cross axis (vertical)
-        using stretch makes it so items stretch vertically to fill their container
-    */
-    align-items: stretch;
-    column-gap: 3vw;
-    row-gap: 1vw;
-}
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     #series-list {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: .75fr;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #series-list {
+        margin-top: 2vh;
+        display: grid;
+        width: 100%;
+        /* fr represents a fraction of available space in grid container */
+        /* 1 fr = 1 part of available space, space will be shared equally by children */
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        justify-items: center;
+        /* 
+            align-items aligns content on cross axis (vertical)
+            using stretch makes it so items stretch vertically to fill their container
+        */
+        align-items: stretch;
+        column-gap: 3vw;
+        row-gap: 1vw;
     }
 }
 
