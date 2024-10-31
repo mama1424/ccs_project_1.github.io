@@ -100,3 +100,22 @@ font-weight: 400;
 p{
     color: #a6a6a6;
 }
+
+.image-gallery {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-gallery img {
+  border-radius: 5px; /* Optional for rounded corners */
+}
+
+.cropped-image {
+  width: 350px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Crops image to fill container */
+  object-position: center; /* Adjusts position inside the crop */
+}
