@@ -42,8 +42,9 @@ p {
 
 @media screen and (max-width: 1200px) {
     #series-list {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: .75fr;
         width: 100%;
     }
 }
@@ -58,4 +59,8 @@ p {
 
 .grid-text {
     padding-left: 2vw;
+}
+
+#last-section {
+    padding-bottom: .75vh;
 }
