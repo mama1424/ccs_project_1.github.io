@@ -16,3 +16,124 @@ h2 {
     text-align: center;
     color: white;
 }
+
+h3 {
+    text-align: left;
+    color:#262626;
+    font-size: 10px;
+}
+
+.grid-container {
+    display: grid;
+    padding: 25px;
+    grid-template-columns: repeat(7, 9fr); 
+    grid-template-rows: 60px 40px 180px 180px 180px 180px 180px;
+    gap: 5px; /* spacing between grid items */
+}
+  
+.grid-item {
+    position: relative;
+    background-color: #F2AC29;
+    max-height:100%;
+    padding: 10px;
+    color: #262626;
+}
+
+.grid-item-days {
+    background-color: #F2AC29;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+}
+
+.grid-item-month {
+    background-color: #F2AC29;
+    color: #262626;
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    grid-column: span 7; /* spans across all 7 columns */
+}
+
+/* Change color for specific days */
+.grid-item:nth-child(9) {
+    background-color: #262626;
+}
+
+.grid-item:nth-child(10) {
+    background-color: #262626;
+}
+
+.grid-item:nth-child(42) {
+    background-color: #262626;
+}
+
+.grid-item:nth-child(43) {
+    background-color: #262626;
+}
+
+.grid-item:nth-child(8) {
+   grid-column-start: 4; 
+}
+
+.event-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.date-number {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.grid-item p {
+    font-size: 8px;
+    color:#262626;
+}
+
+.event-item p {
+    font-size: 10px;
+    margin: 0;
+    color:#262626;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.grid-item h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.grid-item h4 {
+    margin: 0;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.event-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 72px;
+    height: auto;
+    max-height: 100%;
+    object-fit:contain;
+    align-self: flex-end;
+}
+
+/*.grid-item:hover {
+    transform: scale(.85);
+}*/
