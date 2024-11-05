@@ -31,8 +31,24 @@ h3 {
     grid-template-rows: 60px 40px 350px 350px 350px 350px 350px;
     gap: 5px; /* spacing between grid items */
 }
+
+.grid-container2 {
+    display: grid;
+    padding: 25px;
+    grid-template-columns: repeat(7, 9fr); 
+    grid-template-rows: 60px 40px 350px 350px 350px 350px 350px;
+    gap: 5px; /* spacing between grid items */
+}
   
 .grid-item {
+    position: relative;
+    background-color: #F2AC29;
+    max-height:100%;
+    padding: 10px;
+    color: #262626;
+}
+
+.grid-item2 {
     position: relative;
     background-color: #F2AC29;
     max-height:100%;
@@ -83,7 +99,40 @@ h3 {
    grid-column-start: 4; 
 }
 
+.grid-item2:nth-child(9) {
+    background-color: #262626;
+}
+
+.grid-item2:nth-child(10) {
+    background-color: #262626;
+}
+
+.grid-item2:nth-child(11) {
+    background-color: #262626;
+}
+
+.grid-item2:nth-child(12) {
+    background-color: #262626;
+}
+
+.grid-item2:nth-child(13) {
+    background-color: #262626;
+}
+
+.grid-item2:nth-child(8) {
+    grid-column-start: 6; 
+ }
+
 .event-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.event-item2 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -101,11 +150,24 @@ h3 {
 }
 
 .grid-item p {
-    font-size: 8px;
+    font-size: 12px;
+    color:#262626;
+}
+
+.grid-item2 p {
+    font-size: 12px;
     color:#262626;
 }
 
 .event-item p {
+    font-size: 12px;
+    margin: 0;
+    color:#262626;
+    text-align: left;
+    padding-top: 5px;
+}
+
+.event-item2 p {
     font-size: 10px;
     margin: 0;
     color:#262626;
@@ -118,7 +180,18 @@ h3 {
     font-size: 14px;
 }
 
+.grid-item2 h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
 .grid-item h4 {
+    margin: 0;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.grid-item2 h4 {
     margin: 0;
     font-size: 14px;
     padding-top: 5px;
@@ -147,6 +220,32 @@ h3 {
     margin: 5px 0 0 0;
 }
 
+.events-button {
+    text-decoration: none;
+    color: #F2AC29;        
+    font-weight: 600; 
+    padding: 1.5vh;        
+    transition: ease-in-out;
+    transition: color 1s;
+    transition: font-size 1s;
+}
+
+.all-events {
+    text-align: center;
+}
+
+.all-events h1 {
+    font-size: 40px;
+}
+
+.button-color {
+    color: white;
+}
+
+.all-events-list {
+    text-align:center;
+    padding: 10px;
+}
 
 /*.grid-item:hover {
     transform: scale(.85);
