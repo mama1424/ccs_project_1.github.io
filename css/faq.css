@@ -85,7 +85,7 @@ font-style: normal;
 font-weight: 400;
 }
 
-#button{
+.button-section{
     background-color: #a6a6a6;
     border: none;
     color: #262626;
